@@ -15,8 +15,8 @@ def encryption(encoded_message):
     return encoded_message
 
 
-message = input("Enter messege to encrypt: ")
-print(encryption(message))
+# message = input("Enter messege to encrypt: ")
+# print(encryption(message))
 
 
 def decryption(decoded_message):
@@ -33,5 +33,25 @@ def decryption(decoded_message):
     return decoded_message
 
 
-message = input("Enter messege to decrypt: ")
-print(decryption(message))
+# message = input("Enter messege to decrypt: ")
+# print(decryption(message))
+
+
+# def invalid_input():
+#     print("Invalid Input")
+# def print_invalid_input():
+#     print("Invalid input. Please try again.")
+
+while True:
+    choice = input("Choose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
+    if choice == '0':
+        break
+    elif choice == '1':
+        message = input("Enter messege to encrypt: ")
+        print(encryption(message))
+    elif choice == '2': 
+        message = input("Enter messege to decrypt: ")
+        print(decryption(message))                                  #Add a line that says en law fy morse code 8alat ytal3a y ignore el heta dy.
+    else: 
+       print("Invalid input")                # EL HETA DY 8ALAT  
+       #I want this to be a function 
