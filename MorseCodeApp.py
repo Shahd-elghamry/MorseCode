@@ -1,6 +1,6 @@
 
-print("Welcome to my application!")
-print("This is a morse code application")
+# print("Welcome to my application!")
+# print("This is a morse code application")
 alphabet_to_morse_dict = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
     'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',

@@ -1,5 +1,5 @@
 
-
+print("Welcome")
 
 def encryption(encoded_message):
     alphabet_to_morse_dict = {
