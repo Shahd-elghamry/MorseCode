@@ -1,3 +1,4 @@
+print("Hello")
 while True:
     choice = input("Choose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
     if choice == '0':
