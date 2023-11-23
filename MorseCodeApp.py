@@ -1,3 +1,7 @@
+
+print("Welcome to my application!")
+
+
 alphabet_to_morse_dict = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
     'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
@@ -26,3 +30,5 @@ morse_to_alphabet_dict = {
 message = input("Enter messege to decrypt: ")
 decoded_message = "".join(morse_to_alphabet_dict.get(c, '') for c in message.split())
 print(decoded_message)
+
+
