@@ -1,6 +1,6 @@
 
-print("Welcome")
-
+print("Welcome to my application!")
+print("This is a morse code application")
 def encryption(encoded_message):
     alphabet_to_morse_dict = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
