@@ -11,8 +11,8 @@ class TestMorseCode(unittest.TestCase):
     def test_encryption_all_uppercase(self):
         self.assertEqual(Function.encryption("HELLO WORLD"),".... . .-.. .-.. --- / .-- --- .-. .-.. -..")
 
-    # def test_encryption_all_lowercase(self):
-    #     self.assertEqual(square.calculate_square(1.5),2.25)
+    def test_encryption_all_lowercase(self):
+        self.assertEqual(Function.encryption("hello world"),".... . .-.. .-.. --- / .-- --- .-. .-.. -..")
 
     # def test_zero(self):
     #     self.assertEqual(square.calculate_square(0),0)
