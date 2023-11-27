@@ -1,7 +1,8 @@
 
 print("Welcome to my application!")
 print("This is a morse code application")
-def encryption(encoded_message):
+def encryption(message):
+    encoded_message = " "
     alphabet_to_morse_dict = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
     'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
@@ -19,7 +20,8 @@ def encryption(encoded_message):
 # print(encryption(message))
 
 
-def decryption(decoded_message):
+def decryption(message):
+    decoded_message = " "
     morse_to_alphabet_dict = {
     '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E', '..-.': 'F', '--.': 'G', '....': 'H',
     '..': 'I', '.---': 'J', '-.-': 'K', '.-..': 'L', '--': 'M', '-.': 'N', '---': 'O', '.--.': 'P',
@@ -42,16 +44,16 @@ def decryption(decoded_message):
 # def print_invalid_input():
 #     print("Invalid input. Please try again.")
 
-while True:
-    choice = input("Choose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
-    if choice == '0':
-        break
-    elif choice == '1':
-        message = input("Enter messege to encrypt: ")
-        print(encryption(message))
-    elif choice == '2': 
-        message = input("Enter messege to decrypt: ")
-        print(decryption(message))                                  #Add a line that says en law fy morse code 8alat ytal3a y ignore el heta dy.
-    else: 
-       print("Invalid input")                # EL HETA DY 8ALAT  
-       #I want this to be a function 
+# while True:
+#     choice = input("Choose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
+#     if choice == '0':
+#         break
+#     elif choice == '1':
+#         message = input("Enter messege to encrypt: ")
+#         print(encryption(message))
+#     elif choice == '2': 
+#         message = input("Enter messege to decrypt: ")
+#         print(decryption(message))                                  #Add a line that says en law fy morse code 8alat ytal3a y ignore el heta dy.
+#     else: 
+#        print("Invalid input")                # EL HETA DY 8ALAT  
+# #        #I want this to be a function 
