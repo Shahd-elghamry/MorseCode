@@ -53,8 +53,8 @@ while True:
         break
     elif choice == '1':
         message = input("Enter messege to encrypt: ")
-        print(encryption(message))
-    elif choice == '2': 
+        print(encryption(message))                                  #3ayza new line w y2ool the encryption message = ???
+    elif choice == '2':                                              
         message = input("Enter messege to decrypt: ")
         print(decryption(message))                                  #Add a line that says en law fy morse code 8alat ytal3a y ignore el heta dy.
     else: 
