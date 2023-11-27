@@ -34,6 +34,9 @@ def decryption(message):
         print("No input. Morse code is needed to ouput")
     return decoded_message
 
+def invalid_input():
+    print("Invalid input. Please enter a valid option.")
+
 while True:
     choice = input("Choose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
     if choice == '0':
@@ -45,4 +48,4 @@ while True:
         message = input("Enter messege to decrypt: ")
         print(decryption(message))                          
     else: 
-       print("Invalid input") 
+        invalid_input()
