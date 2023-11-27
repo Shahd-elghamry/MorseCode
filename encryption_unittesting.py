@@ -1,6 +1,6 @@
 import unittest
 import Function 
-class TestMorseCode(unittest.TestCase):
+class TestMorseCode_Encryption(unittest.TestCase):
 
     # def test_encryption(self):
     #     # from Function import encryption  
@@ -14,11 +14,9 @@ class TestMorseCode(unittest.TestCase):
     def test_encryption_all_lowercase(self):
         self.assertEqual(Function.encryption("hello world"),".... . .-.. .-.. --- / .-- --- .-. .-.. -..")
 
-    # def test_zero(self):
-    #     self.assertEqual(square.calculate_square(0),0)
+    def test_encryption_with_numbers(self):
+        self.assertEqual(Function.encryption("H3ll0 W0r1d"),".... ...-- .-.. .-.. ----- / .-- ----- .-. .---- -..")
     
-    # def test_invalid_number(self):
-    #     self.assertRaises(ValueError,square.calculate_square,"ab")
 
 
 if __name__ == '__main__':
