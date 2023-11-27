@@ -37,6 +37,8 @@ def decryption(message):
     decoded_message = "".join(morse_to_alphabet_dict.get(c, '') for c in message.split())
     return decoded_message
 
+def handle_invalid_input():
+    print("Invalid input. Please enter a valid option.")
 
 # message = input("Enter messege to decrypt: ")
 # print(decryption(message))
@@ -58,8 +60,7 @@ while True:
         message = input("Enter messege to decrypt: ")
         print(decryption(message))                                  #Add a line that says en law fy morse code 8alat ytal3a y ignore el heta dy.
     else: 
-       print("Invalid input")               
-# 
+        handle_invalid_input()
 # 
 #  # EL HETA DY 8ALAT  
 # #     

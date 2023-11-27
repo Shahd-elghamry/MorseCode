@@ -31,7 +31,7 @@ def decryption(message):
     '...-..-': '$', '.--.-.': '@', '/': ' '}
     decoded_message = "".join(morse_to_alphabet_dict.get(c, '') for c in message.split())
     if message == "":
-        print("No input. Text is needed to ouput")
+        print("No input. Morse code is needed to ouput")
     return decoded_message
 
 while True:
