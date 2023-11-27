@@ -14,6 +14,8 @@ def encryption(message):
     ':': '---...', ';': '-.-.-.', '=': '-...-', '+': '.-.-.', '-': '-....-', '_': '..--.-', '"': '.-..-.',
     '$': '...-..-', '@': '.--.-.', ' ': '/'}
     encoded_message = " ".join(alphabet_to_morse_dict.get(c,'') for c in message.upper())
+    if message == "":
+        print("No input. Text is needed to ouput")
     return encoded_message
 
 def decryption(message):
