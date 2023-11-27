@@ -62,3 +62,7 @@ def decryption(message):
 #  # EL HETA DY 8ALAT  
 # #     
 #    #I want this to be a function 
+
+
+
+#  #3ayza law arabic yedy this character is wrong w 3ayza amel lel invalid input a function, w yamely raise error. 
