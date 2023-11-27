@@ -1,6 +1,7 @@
 
 print("Welcome to my application!")
 print("This is a morse code application")
+print("Reminder a space between words or characters will be defined by '/'.")
 def encryption(message):
     encoded_message = " "
     alphabet_to_morse_dict = {
