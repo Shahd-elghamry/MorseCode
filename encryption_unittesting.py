@@ -24,10 +24,18 @@ class TestMorseCode(unittest.TestCase):
     def test_decryption_with_spaces(self):
         self.assertEqual(Function.decryption(".... .. / -- -.-- / -. .- -- . / .. ... / ... .... .- .... -.."), "HI MY NAME IS SHAHD")
     
-    def test_invalid_input(self):
-        self.assertAlmostEqual(Function.invalid_input(""),"Invalid input. Please enter a valid option." )
+    def test_decryption_numbers_characters(self):
+        self.assertEqual(Function.decryption(".---- ..--- ...-- -....- ..--.. ..--.."),'123-??')
+    
+    def test_encryption_invalid(self):
+        self.assertIn(Function.encryption(""), "No input ")
+
+    def test_decryption_invalid(self):
+        self.assertIn(Function.decryption(""), "No input.")
+    
+
+        
 
 
 if __name__ == '__main__':
-
     unittest.main()

@@ -1,7 +1,7 @@
 
-print("Welcome to my application!")
-print("This is a morse code application")
-print("Reminder a space between words or characters will be defined by '/'.")
+# print("Welcome to my application!")
+# print("This is a morse code application")
+# print("Reminder a space between words or characters will be defined by '/'.")
 def encryption(message):
     encoded_message = " "
     alphabet_to_morse_dict = {
@@ -14,8 +14,6 @@ def encryption(message):
     ':': '---...', ';': '-.-.-.', '=': '-...-', '+': '.-.-.', '-': '-....-', '_': '..--.-', '"': '.-..-.',
     '$': '...-..-', '@': '.--.-.', ' ': '/'}
     encoded_message = " ".join(alphabet_to_morse_dict.get(c,'') for c in message.upper())
-    if message == "":
-        print("No input. Text is needed to ouput")
     # if "" not in alphabet_to_morse_dict:
     #     print("The empty string is not a key in the dictionary.")
     return encoded_message
