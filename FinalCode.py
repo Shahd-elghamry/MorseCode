@@ -35,7 +35,9 @@ def decryption(message):
     return decoded_message
 
 def invalid_input():
-    print("Invalid input. Please enter a valid option.")
+    message = " "
+    if message == " ":
+        print("Invalid input. Please enter a valid option.")
 
 while True:
     choice = input("Choose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
