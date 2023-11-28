@@ -51,7 +51,8 @@ def invalid_input():            # Function for invalid input
 
 while True:             # while loop to make it run forever until told othersie
     choice = input("Choose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
-    if choice == '0':                                                       
+    if choice == '0':   
+        print("Thank you for using the Morse code application.")                                                    
         break                                       # Program stops running 
     elif choice == '1':
         message = input("Enter messege to encrypt: ")
