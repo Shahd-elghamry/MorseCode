@@ -23,6 +23,9 @@ class TestMorseCode(unittest.TestCase):
     
     def test_decryption_with_spaces(self):
         self.assertEqual(Function.decryption(".... .. / -- -.-- / -. .- -- . / .. ... / ... .... .- .... -.."), "HI MY NAME IS SHAHD")
+    
+    def test_invalid_input(self):
+        self.assertAlmostEqual(Function.invalid_input(""),"Invalid input. Please enter a valid option." )
 
 
 if __name__ == '__main__':
