@@ -4,6 +4,8 @@ print("This is a morse code application")
 print("Reminder a space between words or characters should be defined by '/' ")    # Should add this for when decrypting a message
 print("When encryption be advised '.' and '-' are characters in the dictionary therefore it will be encryptd.")   # this is added for when encrypting user should be advised that dots and dashes will be encrypted.
 
+
+
 def encryption(message):      # created functions to be able to do the unittesting
     encoded_message = " "          # had to define the variable 
     alphabet_to_morse_dict = {
@@ -19,6 +21,8 @@ def encryption(message):      # created functions to be able to do the unittesti
     if message == "":
         print("No input. Text is needed to ouput")                  # in case input wasn't added
     return encoded_message                  # at the end of the function return should be added. 
+
+
 
 def decryption(message):                # Function for decrypting 
     decoded_message = " "           # same as encrypting
@@ -36,10 +40,14 @@ def decryption(message):                # Function for decrypting
         print("No input. Morse code is needed to ouput")
     return decoded_message
 
+
+
 def invalid_input():            # Function for invalid input
     message = " "
     if message == " ":
         print("Invalid input. Please enter a valid option.")
+
+
 
 while True:             # while loop to make it run forever until told othersie
     choice = input("Choose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
