@@ -1,5 +1,5 @@
 
-print("Welcome to my application!")
+print("\nWelcome to my application!")
 print("This is a morse code application")
 print("Reminder a space between words or characters should be defined by '/' ")    # Should add this for when decrypting a message
 print("When encryption be advised '.' and '-' are characters in the dictionary therefore it will be encryptd.")   # this is added for when encrypting user should be advised that dots and dashes will be encrypted.
@@ -19,7 +19,7 @@ def encryption(message):      # created functions to be able to do the unittesti
     '$': '...-..-', '@': '.--.-.', ' ': '/'}                                    # dictionary for alphabet to morse
     encoded_message = " ".join(alphabet_to_morse_dict.get(c,'') for c in message.upper())                   # empty string is there for when we join the results it joins there.
     if message == "":
-        print("No input. Text is needed to ouput")                  # in case input wasn't added
+        print("\nNo input. Text is needed to ouput")                  # in case input wasn't added
     return encoded_message                  # at the end of the function return should be added. 
 
 
@@ -37,7 +37,7 @@ def decryption(message):                # Function for decrypting
     '...-..-': '$', '.--.-.': '@', '/': ' '}
     decoded_message = "".join(morse_to_alphabet_dict.get(c, '') for c in message.split())       # for every character in dictionary get it for every character in message
     if message == "":
-        print("No input. Morse code is needed to ouput")
+        print("\nNo input. Morse code is needed to ouput")
     return decoded_message
 
 
@@ -45,20 +45,20 @@ def decryption(message):                # Function for decrypting
 def invalid_input():            # Function for invalid input
     message = " "
     if message == " ":
-        print("Invalid input. Please enter a valid option.")
+        print("\n Invalid input. Please enter a valid option.\n")
 
 
 
 while True:             # while loop to make it run forever until told othersie
-    choice = input("Choose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
+    choice = input("\nChoose 0 for exit, 1 for Encrypt, 2 for Decrypt: ")
     if choice == '0':   
-        print("Thank you for using the Morse code application.")                                                    
+        print("\nThank you for using the Morse code application. \n")                                                    
         break                                       # Program stops running 
     elif choice == '1':
-        message = input("Enter messege to encrypt: ")
-        print("This is your encrypted text: ", encryption(message))
+        message = input("\nEnter messege to encrypt: \n")
+        print("\nThis is your encrypted text: \n", encryption(message))
     elif choice == '2': 
-        message = input("Enter messege to decrypt: ")
-        print("This is your decrypted text: ", decryption(message))                          
+        message = input("\n Enter messege to decrypt: \n")
+        print("\nThis is your decrypted text: \n", decryption(message))                          
     else: 
         invalid_input()
